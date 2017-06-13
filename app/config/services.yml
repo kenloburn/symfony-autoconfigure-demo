@@ -13,8 +13,6 @@ services:
         public: true
         tags: ['controller.service_arguments']
 
-    AppBundle\Task\ExampleTask:
-        tags: [example.task]
+    AppBundle\Task\ExampleTask: ~
 
-    AppBundle\Task\AnotherTask:
-        tags: [example.task]
+    AppBundle\Task\AnotherTask: ~

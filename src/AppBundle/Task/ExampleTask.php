@@ -2,6 +2,8 @@
 
 namespace AppBundle\Task;
 
-class ExampleTask
+use ExampleBundle\Interfaces\TaskInterface;
+
+class ExampleTask implements TaskInterface
 {
 }
