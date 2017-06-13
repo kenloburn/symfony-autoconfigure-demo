@@ -2,6 +2,6 @@
 
 namespace ExampleBundle\Interfaces;
 
-interface ServiceInterface
+interface TaskInterface
 {
 }

@@ -2,7 +2,7 @@
 
 namespace ExampleBundle\DependencyInjection;
 
-use ExampleBundle\Interfaces\ServiceInterface;
+use ExampleBundle\Interfaces\TaskInterface;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
@@ -13,8 +13,8 @@ class ExampleExtension extends Extension
     public function load(array $configs, ContainerBuilder $container)
     {
         $container
-            ->registerForAutoconfiguration(ServiceInterface::class)
-            ->addTag('example.service');
+            ->registerForAutoconfiguration(TaskInterface::class)
+            ->addTag('example.task');
 
         $loader = new YamlFileLoader(
             $container,

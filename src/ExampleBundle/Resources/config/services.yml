@@ -3,4 +3,4 @@ services:
         autowire: true
         public: false
 
-    ExampleBundle\Service\RegistryService: ~
+    ExampleBundle\Service\TaskRegistryService: ~

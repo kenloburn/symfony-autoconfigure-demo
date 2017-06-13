@@ -2,7 +2,7 @@
 
 namespace ExampleBundle;
 
-use ExampleBundle\DependencyInjection\Compiler\RegistryCollectorPass;
+use ExampleBundle\DependencyInjection\Compiler\TaskCollectorPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
@@ -12,6 +12,6 @@ class ExampleBundle extends Bundle
     {
         parent::build($container);
 
-        $container->addCompilerPass(new RegistryCollectorPass());
+        $container->addCompilerPass(new TaskCollectorPass());
     }
 }
